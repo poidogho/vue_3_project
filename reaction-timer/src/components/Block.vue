@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted , onUpdated, ref, defineEmits} from 'vue'
+import { onMounted , onUpdated, ref, defineEmits, defineProps} from 'vue'
 
 const props = defineProps({
     delay: {
