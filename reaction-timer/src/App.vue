@@ -1,8 +1,9 @@
 <script setup lang="ts">
 
-import {ref, defineProps } from 'vue'
-import Block from './components/Block.vue'
-import Results from './components/Results.vue'
+import {ref, defineProps, defineAsyncComponent } from 'vue'
+//  to lazy load components
+const Block = defineAsyncComponent(() => import('./components/Block.vue'));
+const Results = defineAsyncComponent(() => import('./components/Results.vue'));
 
 let isPlaying = ref(false)
 let showResult = ref(false)
