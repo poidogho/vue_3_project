@@ -5,6 +5,9 @@ import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
 import Pokemons from '../views/pokemons/Pokemons.vue'
 import NotFound from '../views/NotFound.vue'
+import Counter from '../views/Counter.vue'
+import Posts from '../views/posts/index.vue'
+import PostDetails from '../views/posts/postDetails.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +40,22 @@ const router = createRouter({
       path: '/pokemons',
       name: 'Pokemons',
       component: Pokemons
+    },
+    {
+      path: '/counter',
+      name: 'Counter',
+      component: Counter
+    },
+    {
+      path: '/posts',
+      name: 'posts',
+      component: Posts
+    },
+    {
+      path: '/posts/:id',
+      name: 'postDetails',
+      component: PostDetails,
+      props: true
     },
     // redirect
     {
