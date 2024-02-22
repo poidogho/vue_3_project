@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import Jobs from '../views/jobs/Jobs.vue'
 import JobDetails from '../views/jobs/JobDetails.vue'
+import Pokemons from '../views/pokemons/Pokemons.vue'
 import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
@@ -31,6 +32,11 @@ const router = createRouter({
       name: 'JobDetails',
       component: JobDetails,
       props: true
+    },
+    {
+      path: '/pokemons',
+      name: 'Pokemons',
+      component: Pokemons
     },
     // redirect
     {
